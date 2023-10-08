@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Drink Menu</title>
+    <style>
+        body {
+            background-image: url('background.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        /* Content Container Styles */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        /* Form Styles */
+        form {
+            text-align: center;
+        }
+
+        /* Navigation Styles */
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 10px;
+            color: #333;
+        }
+
+        /* Drink Images */
+        .drink-image {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Drink Menu</h1>
+    </header>
+
+    <div class="container">
+        <!-- Page 1: Sign In -->
+        <h2>Sign In</h2>
+        <form action="page2.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Sign In">
+        </form>
+
+        <nav>
+            <a href="page2.html">Dive into the menu</a>
+            <a href="page3.html">What inspired me</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Page 2: Drink Selection -->
+        <h2>Choose Your Drink</h2>
+        <form action="page3.html" method="post">
+            <label for="feeling">How are you feeling today?</label>
+            <input type="text" id="feeling" name="feeling" required><br><br>
+            <label for="drinkType">What kind of drink would you like? (Hot or Cold)</label>
+            <input type="text" id="drinkType" name="drinkType" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="container">
+        <!-- Page 3: Drink Recommendations -->
+        <h2>Drink Recommendations</h2>
+        <img src="img 1.jpg" alt="img1" class="drink-image">
+        <img src="img 2.jpg" alt="img2" class="drink-image">
+        <img src="img 3.jpg" alt="img3" class="drink-image">
+        <!-- Add more drink images with appropriate URLs -->
+    </div>
+
+    <div class="container">
+        <!-- Page 4: Feedback -->
+        <h2>Give Us Your Feedback</h2>
+        <form action="page5.html" method="post">
+            <label for="feedback">Your Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="container">
+        <!-- Page 5: About Me and Contact -->
+        <h2>About Me</h2>
+        <p>Puripan Leelapong-Anan</p>
+        <p>Contact: <a href="mailto:chopun2547@gmail.com">chopun2547@gmail.com</a></p>
+    </div>
+
+    <footer>
+        &copy; My drink
+    </footer>
+</body>
+</html>
